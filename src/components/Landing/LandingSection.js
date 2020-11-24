@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import {Grid, Typography, Button, withStyles} from '@material-ui/core'
-import SVGIcon from '../SVGIcon/SVGIcon'
+import { withRouter } from 'react-router-dom'
 import SVGPath from '../SVGPath/SVGPath'
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt'
 
 const styles = theme => ({
   container: {
     height: '100%'
   },
   sideBar: {
-    background: 'black',
+    background: '#1c1c1e',
     flex: '0 0 30%',
+    width: '30%',
     alignSelf: 'stretch',
     marginLeft: 'auto',
     position: 'relative'
@@ -32,9 +34,9 @@ const styles = theme => ({
   go: {
     color: '#fff',
     marginTop: 15,
-    background: 'rgba(36, 68, 116, .2)',
+    background: 'rgba(36, 68, 116, .4)',
     '&:hover': {
-      background: 'rgba(36, 68, 116, .8)'
+      background: 'rgba(36, 68, 116, .9)'
     }
   },
   imgContainer: {
@@ -110,8 +112,12 @@ const LandingSection = (props) => {
     className,
     bgActive,
     background,
-    thumbnail
+    thumbnail,
+    path,
+    history
   } = props
+
+  const goToPage = useCallback(() => history.push(path), [path])
 
   return (
     <div className={className} style={{background: bgActive || background}}>
@@ -122,9 +128,8 @@ const LandingSection = (props) => {
           <Button
             variant={'contained'}
             classes={{root: classes.go}}
-            endIcon={<SVGIcon xlinkHref={''} className={classes.outicon}/>}
-            onClick={() => {
-            }}>
+            endIcon={<ArrowRightAltIcon />}
+            onClick={goToPage}>
             Visitar Seccion
           </Button>
         </Grid>
@@ -144,4 +149,4 @@ const LandingSection = (props) => {
   )
 }
 
-export default withStyles(styles)(LandingSection)
+export default withStyles(styles)(withRouter(LandingSection))

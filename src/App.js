@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <Router>
         <AppContext.Provider value={contextValues}>
-          <Grid container alignItems={'center'} direction={'column'} classes={{ root: classes.appContainer }}>
+          <Grid container alignItems={'center'} justify={'center'} direction={'column'} classes={{ root: classes.appContainer }}>
             <AppBar />
             <AppContent/>
             <Footer />

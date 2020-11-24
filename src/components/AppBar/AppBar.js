@@ -1,11 +1,16 @@
-import React from 'react'
-import {Grid, Typography, Button, withStyles} from '@material-ui/core'
+import React, { useState, useCallback } from 'react'
+import {Grid, Typography, Button, withStyles, Drawer} from '@material-ui/core'
+import { withRouter } from 'react-router-dom'
 import {withAppContext} from '../../context/withAppContext'
-import SVGIcon from '../SVGIcon/SVGIcon'
+import MenuIcon from '@material-ui/icons/Menu'
+import MenuOpenIcon from '@material-ui/icons/MenuOpen'
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt'
+import { sections } from '../../constants/sections'
 
 const styles = theme => ({
   appBar: {
     position: 'fixed',
+    top: 0,
     zIndex: 100,
     color: theme.palette.primary.contrastText,
     width: '100%',
@@ -27,11 +32,56 @@ const styles = theme => ({
     marginLeft: 'auto',
     color: '#fff'
   },
-  menuLabel: {}
+  menuList: {
+    padding: [[25,  20]]
+  },
+  menuItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    textAlign: 'left',
+    borderRadius: 0,
+    width: '100%',
+    borderBottom: '1px solid white',
+    padding: [[18, 10]],
+    lineHeight: 1.3,
+    color: '#fff',
+    '&:hover': {
+      background: 'rgba(36, 68, 116, .4)'
+    }
+  },
+  menuItemIcon: {
+    right: 8
+  },
+  menuLabel: {},
+  menuIcon: {
+    fontSize: 30
+  },
+  menuPop: {
+    width: '32%',
+    background: '#1c1c1e',
+    '& $menu': {
+      flex: 0,
+      width: '100%',
+      borderBottom: '1px solid rgba(255, 255, 255, .5)',
+      borderRadius: 0,
+      lineHeight: 2.5
+    }
+  }
 })
 
 const AppBar = (props) => {
-  const {classes} = props
+  const [menuOpen, setMenuOpen] = useState(false)
+  const {classes, history} = props
+  const toggleDrawer = useCallback((toggle) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return
+    }
+    setMenuOpen(toggle)
+  }, [])
+  const goToPage = useCallback((path) => {
+    history.push(path)
+    setMenuOpen(false)
+  }, [])
 
   return (
     <div className={classes.appBar}>
@@ -51,14 +101,44 @@ const AppBar = (props) => {
         <Button
           variant={'text'}
           classes={{root: classes.menu, label: classes.menuLabel}}
-          endIcon={<SVGIcon xlinkHref={''} className={classes.outicon}/>}
-          onClick={() => {
-          }}>
+          endIcon={<MenuIcon className={classes.menuIcon} />}
+          onClick={toggleDrawer(true)}>
           MENU
         </Button>
+        <Drawer anchor={'right'} open={menuOpen} onClose={toggleDrawer(false)} classes={{ paper: classes.menuPop }}>
+          <Button
+            variant={'text'}
+            classes={{root: classes.menu, label: classes.menuLabel}}
+            endIcon={<MenuOpenIcon className={classes.menuIcon} />}
+            onClick={toggleDrawer(false)}>
+            Cerrar Menu
+          </Button>
+          <div className={classes.menuList}>
+            <Button
+              key={'/'}
+              style={{borderColor: 'rgba(255,255,255,.3)'}}
+              variant={'text'}
+              classes={{root: classes.menuItem, endIcon: classes.menuItemIcon}}
+              endIcon={<ArrowRightAltIcon style={{color: 'rgba(255,255,255,.3)'}} />}
+              onClick={() => goToPage('/')}>
+              Inicio
+            </Button>
+            {sections.map(s => (
+              <Button
+                key={s.path}
+                style={{borderColor: s.background}}
+                variant={'text'}
+                classes={{root: classes.menuItem, endIcon: classes.menuItemIcon}}
+                endIcon={<ArrowRightAltIcon style={{color: s.background}} />}
+                onClick={() => goToPage(s.path)}>
+                {s.title}
+              </Button>
+            ))}
+          </div>
+        </Drawer>
       </Grid>
     </div>
   )
 }
 
-export default withStyles(styles)(withAppContext(AppBar))
+export default withStyles(styles)(withAppContext(withRouter(AppBar)))

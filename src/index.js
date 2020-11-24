@@ -5,7 +5,7 @@ import App from './App.js'
 
 const appTheme = createMuiTheme({
   palette: {
-    background: { default: '#f0f3f7' }
+    background: { default: '#B69679' }
   },
   typography: {
     fontFamily: 'Merriweather',

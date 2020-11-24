@@ -3,22 +3,28 @@ import { CircularProgress, withStyles, Typography } from '@material-ui/core'
 
 const styles = theme => ({
   text: {
+    fontFamily: 'Montserrat',
+    fontWeight: 900,
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: 20,
     margin: [[25, 'auto']],
-    color: theme.palette.primary.main
+    color: '#fff'
   },
   progress: {
     maxWidth: 120,
-    margin: [[0, 'auto']]
+    margin: [[0, 'auto']],
+    color: 'orange'
+  },
+  container: {
+    textAlign: 'center'
   }
 })
 
 const Loading = (props) => {
   const { classes } = props
   return (
-    <div>
-      <Typography classes={{ root: classes.text }}>Loading</Typography>
+    <div className={classes.container}>
+      <Typography classes={{ root: classes.text }}>LOADING</Typography>
       <CircularProgress classes={{ root: classes.progress }} />
     </div>
   )

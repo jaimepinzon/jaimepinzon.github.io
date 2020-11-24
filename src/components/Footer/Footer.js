@@ -1,7 +1,6 @@
 import React from 'react'
-import {Grid, Typography, Button, withStyles} from '@material-ui/core'
+import {Typography, withStyles} from '@material-ui/core'
 import {withAppContext} from '../../context/withAppContext'
-import SVGIcon from '../SVGIcon/SVGIcon'
 
 const styles = theme => ({
   footer: {
