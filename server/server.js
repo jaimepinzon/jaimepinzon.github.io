@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 
 const app = express()
-const buildPath = (innerFile) => path.resolve(__dirname, '../build', (innerFile || ''))
+const buildPath = (innerFile) => path.resolve(__dirname, '../', (innerFile || ''))
 const port = 3000
 
 app.use(express.json())

@@ -1,6 +1,5 @@
 const path = require('path')
-const CopyPlugin = require('copy-webpack-plugin')
-const buildFolder = (innerFolder) => path.resolve(__dirname, '../build', (innerFolder || ''))
+const buildFolder = (innerFolder) => path.resolve(__dirname, '../', (innerFolder || ''))
 
 const baseConfigObject = {
   output: {
@@ -44,21 +43,7 @@ const externalsAndStaticCompiler = {
   ...baseConfigObject,
   entry: {
     externals: './src/externals.js'
-  },
-  plugins: [
-    new CopyPlugin({
-      patterns: [
-        {
-          from: 'assets',
-          to: buildFolder('assets')
-        },
-        {
-          from: 'src/html/index.html',
-          to: buildFolder()
-        }
-      ]
-    })
-  ]
+  }
 }
 
 module.exports = [
