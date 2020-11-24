@@ -15,7 +15,8 @@ const styles = theme => ({
     position: 'relative'
   },
   content: {
-    padding: [[30, '5%']]
+    padding: [[30, '5%']],
+    marginLeft: 'auto'
   },
   subtitle: {
     color: '#fff',
@@ -25,7 +26,7 @@ const styles = theme => ({
     maxWidth: 350
   },
   title: {
-    paddingTop: 25,
+    paddingTop: 45,
     color: '#fff'
   },
   go: {
@@ -43,9 +44,9 @@ const styles = theme => ({
     borderRadius: '50%',
     background: '#000',
     left: -130,
-    top: 25,
     position:  'relative',
     zIndex: 20,
+    boxShadow: '-4px 8px 3px rgba(0,0,0,.3)',
     '& img': {
       margin: [[-50, 0, 0, -50]],
       maxWidth: 400,
@@ -69,16 +70,24 @@ const styles = theme => ({
     strokeWidth: 2,
     fill: 'none',
     position: 'absolute',
-    left: -222,
-    width: 553,
-    top: 66,
+    left: -183,
+    width: 428,
+    top: '50%',
+    transform: 'translateY(-50%)',
     '& path': {
       strokeDasharray: 'var(--offset, 100)',
-      animation: '$strokeAnimation linear 25s infinite alternate'
+      animation: '$strokeAnimation linear 12s infinite alternate'
     },
-    '& path:nth-child(2), & path:nth-child(3)': {
+    '& path:nth-child(2)': {
       animationDirection: 'alternate-reverse',
-      animationDuration: '22s'
+      animationDuration: '10s'
+    },
+    '& path:nth-child(1)': {
+      animationDirection: 'alternate-reverse',
+      animationDuration: '8s'
+    },
+    '& path:nth-child(3)': {
+      animationDuration: '6s'
     }
   },
   '.section.active': {
@@ -89,8 +98,7 @@ const styles = theme => ({
   },
   '@keyframes strokeAnimation': {
     '0%': { strokeDashoffset: 'var(--offset, 100)' },
-    '50%': { strokeDashoffset: 0 },
-    '100%': { strokeDashoffset: 'var(--offset, 100)' }
+    '100%': { strokeDashoffset: 0 }
   }
 })
 
@@ -121,15 +129,11 @@ const LandingSection = (props) => {
           </Button>
         </Grid>
         <Grid container classes={{ root: classes.sideBar }} justify={'center'} direction={'column'}>
-          <svg viewBox="0 0 800 800"  className={classes.svg} xmlSpace="preserve">
-            <SVGPath
-              d="M636.21,491.26C598.09,605.03,490.63,687,364.03,687c-53.96,0-104.44-14.89-147.55-40.78"/>
-            <SVGPath
-              d="M172.86,185.93C223.62,140.57,290.6,113,364.03,113c109.11,0,204.01,60.89,252.55,150.55"/>
-            <SVGPath
-              d="M364.03,655.58c-141.16,0-255.58-114.43-255.58-255.58s114.43-255.58,255.58-255.58"/>
-            <SVGPath
-              d="M546.88,563.02c39.99-41.72,64.56-98.33,64.56-160.69c0-59.39-18.04-112.07-50.14-151.52"/>
+          <svg viewBox="0 0 428 428"  className={classes.svg} xmlSpace="preserve">
+            <SVGPath d="M407.7,279.8C380.2,361.9,302.7,421,211.3,421c-38.9,0-75.3-10.7-106.4-29.4"/>
+            <SVGPath d="M73.5,59.6C110.1,26.9,158.4,7,211.3,7C290,7,358.5,50.9,393.5,115.6"/>
+            <SVGPath d="M211.3,398.3C109.5,398.3,27,315.8,27,214S109.5,29.7,211.3,29.7"/>
+            <SVGPath d="M343.2,331.6c28.8-30.1,46.6-70.9,46.6-115.9c0-42.8-13-80.8-36.2-109.3"/>
           </svg>
           <div className={classes.imgContainer}>
             <img src={`./assets/img/sections/${thumbnail}`} alt='GeologyStone'/>
