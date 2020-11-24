@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 import { Grid, withStyles } from '@material-ui/core'
 import { AppContext } from './context/AppContext'
 import AppBar from './components/AppBar/AppBar'
 import AppContent from './components/AppContent/AppContent'
+import Footer from './components/Footer/Footer'
 
 const styles = theme => ({
   appContainer: {
@@ -36,6 +37,7 @@ class App extends Component {
           <Grid container alignItems={'center'} direction={'column'} classes={{ root: classes.appContainer }}>
             <AppBar />
             <AppContent/>
+            <Footer />
           </Grid>
         </AppContext.Provider>
       </Router>

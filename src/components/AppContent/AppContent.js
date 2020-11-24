@@ -6,13 +6,13 @@ const Landing = React.lazy(() => import('../Landing/Landing'))
 const AppContent = () => {
   return (
     <Switch>
-      <Route exact path="/home">
+      <Route exact path="/">
         <Suspense fallback={<Loading />}>
           <Landing />
         </Suspense>
       </Route>
       <Route path="/">
-        <Redirect to="/home"/>
+        <Redirect to="/"/>
       </Route>
     </Switch>
   )

@@ -24,8 +24,10 @@ const styles = theme => ({
   },
   menu: {
     flex: '0 0 30%',
-    marginLeft: 'auto'
-  }
+    marginLeft: 'auto',
+    color: '#fff'
+  },
+  menuLabel: {}
 })
 
 const AppBar = (props) => {
@@ -48,8 +50,8 @@ const AppBar = (props) => {
         <Typography classes={{root: classes.thesis}} variant={'h6'}>Del mito, Del hito, Del Sujeto / Jaime Pinzon</Typography>
         <Button
           variant={'text'}
-          classes={{root: classes.menu}}
-          startIcon={<SVGIcon xlinkHref={''} className={classes.outicon}/>}
+          classes={{root: classes.menu, label: classes.menuLabel}}
+          endIcon={<SVGIcon xlinkHref={''} className={classes.outicon}/>}
           onClick={() => {
           }}>
           MENU

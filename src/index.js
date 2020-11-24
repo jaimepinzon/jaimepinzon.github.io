@@ -10,14 +10,23 @@ const appTheme = createMuiTheme({
   typography: {
     fontFamily: 'Merriweather',
     h6: {
-      fontWeight: 600,
+      fontWeight: 700,
       fontFamily: 'Montserrat'
+    },
+    h1: {
+      fontFamily: 'Montserrat',
+      fontSize: 55
+    },
+    h2: {
+      fontFamily: 'Montserrat',
+      fontSize: 40
     }
   },
   overrides: {
     MuiButton: {
-      text: {
-        color: 'white',
+      root: {
+        fontFamily: 'Montserrat',
+        textTransform: 'none'
       }
     }
   },
