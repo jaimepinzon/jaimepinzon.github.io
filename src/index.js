@@ -8,24 +8,28 @@ const appTheme = createMuiTheme({
     background: { default: '#B69679' }
   },
   typography: {
-    fontFamily: 'Merriweather',
+    fontFamily: 'Merriweather, serif',
     h6: {
       fontWeight: 700,
-      fontFamily: 'Montserrat'
+      fontFamily: 'Montserrat, Roboto, Verdana, sans-serif'
     },
     h1: {
-      fontFamily: 'Montserrat',
+      fontFamily: 'Montserrat, Roboto, Verdana, sans-serif',
       fontSize: 55
     },
     h2: {
-      fontFamily: 'Montserrat',
+      fontFamily: 'Montserrat, Roboto, Verdana, sans-serif',
       fontSize: 40
+    },
+    h4: {
+      fontFamily: 'Montserrat, Roboto, Verdana, sans-serif',
+      fontSize: 30
     }
   },
   overrides: {
     MuiButton: {
       root: {
-        fontFamily: 'Montserrat',
+        fontFamily: 'Montserrat, Roboto, Verdana, sans-serif',
         textTransform: 'none'
       }
     }

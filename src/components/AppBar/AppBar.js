@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useMemo } from 'react'
 import {Grid, Typography, Button, withStyles, Drawer} from '@material-ui/core'
 import { withRouter } from 'react-router-dom'
 import {withAppContext} from '../../context/withAppContext'
@@ -14,7 +14,7 @@ const styles = theme => ({
     zIndex: 100,
     color: theme.palette.primary.contrastText,
     width: '100%',
-    padding: [[5, 0, 5, 30]],
+    padding: [[0, 0, 0, 30]],
     left: 0,
     boxSizing: 'border-box',
     '& svg': {
@@ -29,8 +29,13 @@ const styles = theme => ({
   },
   menu: {
     flex: '0 0 30%',
+    borderRadius: 0,
     marginLeft: 'auto',
+    padding: [[11, 8]],
     color: '#fff'
+  },
+  menuInSection: {
+    background: '#1c1c1e'
   },
   menuList: {
     padding: [[25,  20]]
@@ -64,7 +69,7 @@ const styles = theme => ({
       width: '100%',
       borderBottom: '1px solid rgba(255, 255, 255, .5)',
       borderRadius: 0,
-      lineHeight: 2.5
+      lineHeight: 1.8
     }
   }
 })
@@ -72,6 +77,7 @@ const styles = theme => ({
 const AppBar = (props) => {
   const [menuOpen, setMenuOpen] = useState(false)
   const {classes, history} = props
+  const locationPath = history && history.location && history.location.pathname
   const toggleDrawer = useCallback((toggle) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return
@@ -82,9 +88,14 @@ const AppBar = (props) => {
     history.push(path)
     setMenuOpen(false)
   }, [])
+  const colorSection = useMemo(() => {
+    const sectionFromPath = sections.find(s => s.path === locationPath)
+    return sectionFromPath && sectionFromPath.background
+  }, [locationPath])
+  const menuClass = colorSection ? `${classes.menu} ${classes.menuInSection}` : classes.menu
 
   return (
-    <div className={classes.appBar}>
+    <div className={classes.appBar} style={{ background: colorSection }}>
       <Grid container alignItems={'center'}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" xmlSpace="preserve" fill="currentColor">
           <path d="M100,17c45.77,0,83,37.23,83,83s-37.23,83-83,83s-83-37.23-83-83S54.23,17,100,17 M100,4C46.98,4,4,46.98,4,100
@@ -100,7 +111,7 @@ const AppBar = (props) => {
         <Typography classes={{root: classes.thesis}} variant={'h6'}>Del mito, Del hito, Del Sujeto / Jaime Pinzon</Typography>
         <Button
           variant={'text'}
-          classes={{root: classes.menu, label: classes.menuLabel}}
+          classes={{root: menuClass, label: classes.menuLabel}}
           endIcon={<MenuIcon className={classes.menuIcon} />}
           onClick={toggleDrawer(true)}>
           MENU
