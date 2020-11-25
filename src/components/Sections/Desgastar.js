@@ -18,7 +18,7 @@ const Desgastar = (props) => {
   return (
     <SectionStructure {...props}>
       <Grid container classes={{root: classes.contentContainer}}>
-        <GalleryModel list={desgastarGallery}/>
+        <GalleryModel model={desgastarGallery}/>
       </Grid>
     </SectionStructure>
   )
