@@ -74,10 +74,10 @@ const ModalView = (props) => {
         </Button>
       </ButtonGroup>
       <DialogContent classes={{root: contentClass}}>
-        {
-          isVideo ?
-            <video src={`${rootPath}${src}`} controls />
-            : <img src={`${rootPath}${src}`} />
+        {src &&
+        (isVideo ?
+          <video src={`${rootPath}${src}`} controls />
+          : <img src={`${rootPath}${src}`} />)
         }
       </DialogContent>
     </Dialog>
