@@ -2,33 +2,49 @@
  * Section Historia Content
  */
 
-export const historia = [
-  {
-    type: 'title',
-    value: 'In varius libero velit. Donec sed '
-  },
-  {
-    type: 'text',
-    value: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam lacinia congue fringilla. Aenean elementum lorem eu arcu semper, a tristique est ornare. In pharetra vehicula ullamcorper. '
-  },
-  {
-    type: 'quote',
-    value: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam lacinia congue fringilla. Aenean elementum lorem eu arcu semper, a tristique est ornare. In pharetra vehicula ullamcorper. '
-  },
-  {
-    type: 'text',
-    value: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam lacinia congue fringilla. Aenean elementum lorem eu arcu semper, a tristique est ornare. In pharetra vehicula ullamcorper. '
-  },
-  {
-    type: 'image',
-    value: './assets/img/rocks/rock1.png'
-  },
-  {
-    type: 'text',
-    value: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam lacinia congue fringilla. Aenean elementum lorem eu arcu semper, a tristique est ornare. In pharetra vehicula ullamcorper. '
-  },
-  {
-    type: 'text',
-    value: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam lacinia congue fringilla. Aenean elementum lorem eu arcu semper, a tristique est ornare. In pharetra vehicula ullamcorper. '
-  }
-]
+export const historiaGallery = {
+  intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
+  rootPath: './assets/img/historia/',
+  list: [
+    {
+      value: 'detalle_de_cantera.jpg'
+    },
+    {
+      value: 'encantera.jpg'
+    },
+    {
+      value: 'historia1.jpg'
+    },
+    {
+      value: 'sobrelaroca.jpg'
+    },
+    {
+      value: 'vista1.jpg'
+    },
+    {
+      type: 'iframe',
+      thumb: 'video1.jpg',
+      value: 'https://www.youtube.com/embed/OQQhOgZ3pxg'
+    },
+    {
+      value: 'vista2.jpg'
+    },
+    {
+      value: 'vista3.jpg'
+    },
+    {
+      value: 'vista4.jpg'
+    },
+    {
+      type: 'iframe',
+      thumb: 'video2.jpg',
+      value: 'https://www.youtube.com/embed/y4w4x4dbbws'
+    },
+    {
+      value: 'vista5.jpg'
+    },
+    {
+      value: 'vista6.jpg'
+    }
+  ]
+}

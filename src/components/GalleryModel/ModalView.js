@@ -37,8 +37,31 @@ const styles = () => ({
     '& img, & video': {
       maxHeight: '90%'
     }
+  },
+  iframeVid: {
+    width: '100%',
+    height: '90%'
   }
 })
+
+const renderItem = (src, rootPath, isVideo, classes) => {
+  if (isVideo) {
+    const isEmbbed = src.indexOf('http') > -1
+    return (
+      isEmbbed ?
+        <iframe
+          src={src}
+          frameBorder={0}
+          className={classes.iframeVid}
+          allow={'accelerometer; autoplay; encrypted-media'} allowFullScreen></iframe>
+        :
+        <video src={`${rootPath}${src}`} controls />
+    )
+  }
+  return (
+    <img src={`${rootPath}${src}`} />
+  )
+}
 
 const ModalView = (props) => {
   const { classes, callbackModal, modalInfo = {}, rootPath } = props
@@ -74,11 +97,7 @@ const ModalView = (props) => {
         </Button>
       </ButtonGroup>
       <DialogContent classes={{root: contentClass}}>
-        {src &&
-        (isVideo ?
-          <video src={`${rootPath}${src}`} controls />
-          : <img src={`${rootPath}${src}`} />)
-        }
+        {src && renderItem(src, rootPath, isVideo, classes)}
       </DialogContent>
     </Dialog>
   )

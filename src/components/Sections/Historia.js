@@ -1,8 +1,8 @@
 import React from 'react'
 import SectionStructure from './SectionStructure'
-import TextInterpreter from '../TextInterpreter/TextInterpreter'
+import GalleryModel from '../GalleryModel/GalleryModel'
 import { Grid, withStyles } from '@material-ui/core'
-import { historia } from '../../constants/historia'
+import { historiaGallery } from '../../constants/historia'
 
 const styles = () => ({
   contentContainer: {
@@ -17,7 +17,7 @@ const Historia = (props) => {
   return (
     <SectionStructure {...props}>
       <Grid container classes={{root: classes.contentContainer}}>
-        <TextInterpreter text={historia} />
+        <GalleryModel model={historiaGallery}/>
       </Grid>
     </SectionStructure>
   )

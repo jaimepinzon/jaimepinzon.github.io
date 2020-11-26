@@ -21,10 +21,10 @@ const styles = theme => ({
 })
 
 const Loading = (props) => {
-  const { classes } = props
+  const { classes, className } = props
   return (
-    <div className={classes.container}>
-      <Typography classes={{ root: classes.text }}>LOADING</Typography>
+    <div className={`${classes.container} ${className}`}>
+      {!className && <Typography classes={{ root: classes.text }}>LOADING</Typography>}
       <CircularProgress classes={{ root: classes.progress }} />
     </div>
   )

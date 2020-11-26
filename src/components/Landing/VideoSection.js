@@ -67,15 +67,14 @@ const VideoSection = ({classes}) => {
         </video>
       </div>
       <Typography classes={{ root: classes.text }} variant={'h1'}>
-        Del Mito, Del Hito, Del Sujeto
+        Del mito, del hito, del sujeto
       </Typography>
       <Typography className={classes.subtitle} classes={{ root: classes.text }}>
-        Un proyecto que explora la evolucion de la diversidad en la antologia,
-        de muchas palabras que estoy escribiendo para mostrar una intro concisa
+        Un proyecto que explora las distintas relaciones que se pueden tener con una roca a partir de la noción de mimesis del proceso sedimentario.
       </Typography>
       <Divider classes={{ root: classes.divider }} />
       <Typography className={classes.by} classes={{ root: classes.text }}>
-        Por: Jaime Pinzon
+        Por: Jaime Santiago Pinzon
       </Typography>
     </Grid>
   )

@@ -5,7 +5,8 @@ const styles = () => ({
   sectionContainer: {
     width: '100%',
     minHeight: '100%',
-    background: '#fafde8'
+    background: '#fafde8',
+    flex: '1'
   },
   header: {
     padding: [[50, 30, 0]],

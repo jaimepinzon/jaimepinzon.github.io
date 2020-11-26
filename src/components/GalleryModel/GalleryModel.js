@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useCallback } from 'react'
+import React, { useMemo, useState, useCallback, useEffect } from 'react'
 import {
   withStyles,
   GridList,
@@ -9,6 +9,7 @@ import {
 } from '@material-ui/core'
 import PlayCircleFilledOutlinedIcon from '@material-ui/icons/PlayCircleFilledOutlined'
 import ModalView from './ModalView'
+import Loading from '../Loading/Loading'
 
 const styles = () => ({
   imgContainer: {
@@ -43,11 +44,15 @@ const styles = () => ({
       fontSize: 60
     }
   },
+  hide: {
+    display: 'none'
+  }
 })
 
 const GalleryModel = (props) => {
   const { classes, model = {} } = props
   const { intro, rootPath, list = [] } = model
+  const [load, setLoad] = useState(true)
   const [modalInfo, setModalInfo] = useState({
     open: false,
     src: undefined,
@@ -59,28 +64,34 @@ const GalleryModel = (props) => {
   let count = useMemo(() => 0, [model])
   let videoRendered = useMemo(() => false, [model])
 
+  useEffect(() => {
+    setTimeout(() => { setLoad(false) }, 1500)
+  }, [])
+
   return (
     <div>
       <Typography classes={{root: classes.quote}} variant={'body2'}>
         {intro}
       </Typography>
-      <GridList cellHeight={150} className={classes.gridList} cols={3}>
+      <Loading className={`${!load && classes.hide}`} />
+      <GridList cellHeight={150} className={`${load ? classes.hide : classes.gridList}`} cols={3}>
         {list.map((item, i) => {
-          const isByFour = ((i+1) % 4) === 0
-          const isVideo = item.type === 'video'
+          const isByFour = ((i + 1) % 4) === 0
+          const isVideo = item.type === 'video' || item.type === 'iframe'
           const col = isVideo ? 2 : isByFour ? 2 : 1
-          const row = isVideo ? 2 : (videoRendered && ((count+1) % 3 === 0)) ? 2 : 1
-          const thumb = isVideo ? item.value.replace('.mp4', '.jpg') : item.value
+          const row = isVideo ? 2 : (videoRendered && ((count + 1) % 3 === 0)) ? 2 : 1
+          const thumb = isVideo ? item.thumb : item.value
           videoRendered = isVideo
           count += col
 
           return (
-            <GridListTile key={`${item.value}-${i}`} cols={col} rows={row} classes={{ tile: classes.imgContainer }}>
-              <img src={`${rootPath}thumbnails/${thumb}`} />
-              {isVideo && <Grid container alignItems={'center'} justify={'center'} classes={{root: classes.videoOverlay}}>
-                <PlayCircleFilledOutlinedIcon />
-              </Grid>}
-              <ButtonBase classes={{root: classes.link}} onClick={() => callModal(true, item.value, isVideo)} />
+            <GridListTile key={`${item.value}-${i}`} cols={col} rows={row} classes={{tile: classes.imgContainer}}>
+              <img src={`${rootPath}thumbnails/${thumb}`}/>
+              {isVideo &&
+                  <Grid container alignItems={'center'} justify={'center'} classes={{root: classes.videoOverlay}}>
+                    <PlayCircleFilledOutlinedIcon/>
+                  </Grid>}
+              <ButtonBase classes={{root: classes.link}} onClick={() => callModal(true, item.value, isVideo)}/>
             </GridListTile>
           )
         })}

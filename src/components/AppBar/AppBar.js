@@ -108,7 +108,7 @@ const AppBar = (props) => {
 		c-1.82,0-9.94-0.26-12.62-0.78v13.99c4.27,0.78,13.55,1.17,16.07,1.17c5.83,0,10.23-1.06,13.21-3.18c2.97-2.12,4.93-4.97,5.88-8.55
 		c0.95-3.58,1.42-8.59,1.42-15.02V61.39H88.67z"/>
         </svg>
-        <Typography classes={{root: classes.thesis}} variant={'h6'}>Del mito, Del hito, Del Sujeto / Jaime Pinzon</Typography>
+        <Typography classes={{root: classes.thesis}} variant={'h6'}>Del mito, del hito, del sujeto / Jaime Santiago Pinzon</Typography>
         <Button
           variant={'text'}
           classes={{root: menuClass, label: classes.menuLabel}}

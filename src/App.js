@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer'
 const styles = theme => ({
   appContainer: {
     background: theme.palette.background.default,
-    minheight: '100%',
+    minHeight: '100%',
     flexWrap: 'nowrap'
   },
   appContent: {

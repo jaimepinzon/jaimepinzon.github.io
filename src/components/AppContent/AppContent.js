@@ -4,11 +4,17 @@ import Loading from '../Loading/Loading'
 import { sections } from '../../constants/sections'
 const Landing = React.lazy(() => import('../Landing/Landing'))
 const Historia = React.lazy(() => import('../Sections/Historia'))
-const Desgastar = React.lazy(() => import('../Sections/Desgastar'))
+const Roca = React.lazy(() => import('../Sections/Roca'))
 
 const sectionComponents = {
   '/historia': Historia,
-  '/desgastar': Desgastar
+  '/roca': Roca,
+  '/desacumulacion': Historia,
+  '/cascara': Historia,
+  '/desarmar': Historia,
+  '/polvo': Historia,
+  '/mundos': Historia,
+  '/registro': Historia
 }
 
 const AppContent = () => {
