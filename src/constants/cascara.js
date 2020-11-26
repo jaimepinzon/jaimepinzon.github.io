@@ -56,9 +56,6 @@ export const cascaraGallery = {
       value: 'molde14.jpg'
     },
     {
-      value: 'molde15.jpg'
-    },
-    {
       value: 'molde16.jpg'
     },
     {
