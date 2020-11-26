@@ -43,6 +43,12 @@ export const desacumulacionGallery = {
     },
     {
       value: 'desac6.jpg'
+    },
+    {
+      value: 'desac7.jpg'
+    },
+    {
+      value: 'desac8.jpg'
     }
   ]
 }
