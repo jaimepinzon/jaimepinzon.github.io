@@ -30,11 +30,12 @@ const styles = () => ({
     borderColor: 'rgba(255,255,255,.3)',
     textAlign: 'center',
     '& img, & video': {
-      maxWidth: '100%'
+      maxWidth: '200%'
     }
   },
   ratio: {
     '& img, & video': {
+      maxWidth: '100%',
       maxHeight: '90%'
     }
   },
