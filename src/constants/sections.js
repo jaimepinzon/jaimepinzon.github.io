@@ -49,7 +49,7 @@ export const sections = [
     title: 'Mundos Inmortales',
     subtitle: 'Cartografías de los microuniversos vistos en rocas durante la Dinastía Song (1100) ',
     path: '/mundos',
-    thumbnail: 'section7.tif',
+    thumbnail: 'section7.jpg',
     background: '#5b6133'
   },
   {
