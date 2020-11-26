@@ -7,70 +7,58 @@ export const mundosGallery = {
   rootPath: './assets/img/mundos/',
   list: [
     {
-      value: 'lados_de_la_roca_1.jpg'
+      value: '1_general.jpg'
     },
     {
-      value: 'lados_de_la_roca_2.jpg'
+      value: '1_general1.jpg'
     },
     {
-      value: 'lados_de_la_roca_3.jpg'
+      value: '1_general10.jpg'
     },
     {
-      value: 'lados_de_la_roca_4.jpg'
+      value: '1_general3.jpg'
     },
     {
-      value: 'lados_de_la_roca_5.jpg'
+      value: '1_general4.jpg'
     },
     {
-      value: 'lados_de_la_roca_6.jpg'
+      value: '1_general5.jpg'
     },
     {
-      value: 'lados_de_la_roca_7.jpg'
+      value: '1_general6.jpg'
     },
     {
-      value: 'lados_de_la_roca_8.jpg'
+      value: '1_general7.jpg'
     },
     {
-      value: 'lados_de_la_roca_9.jpg'
+      value: '1_general8.jpg'
     },
     {
-      value: 'detalles.jpg'
+      value: '1_general9.jpg'
     },
     {
-      value: 'detalles_1.jpg'
+      value: '2_escaner1.jpg'
     },
     {
-      value: 'detalles_2.jpg'
+      value: '2_escaner2.jpg'
     },
     {
-      value: 'detalles_3.jpg'
+      value: '2_escaner3.jpg'
     },
     {
-      value: 'detalles_4.jpg'
+      value: '2_escaner4.jpg'
     },
     {
-      value: 'detalles_5.jpg'
+      value: '2_escaner6.jpg'
     },
     {
-      value: 'detalles_6.jpg'
+      value: '2_escaner7.jpg'
     },
     {
-      value: 'detalles_7.jpg'
+      value: '2_escaner8.jpg'
     },
     {
-      value: 'detalles_8.jpg'
-    },
-    {
-      value: 'detalles_9.jpg'
-    },
-    {
-      value: 'detalles_10.jpg'
-    },
-    {
-      value: 'IMG_3403.jpg'
-    },
-    {
-      value: 'IMG_3390.jpg'
+      value: '2_escaner9.jpg'
     }
   ]
 }
