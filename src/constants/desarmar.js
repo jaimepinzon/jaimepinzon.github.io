@@ -7,70 +7,91 @@ export const desarmarGallery = {
   rootPath: './assets/img/desarmar/',
   list: [
     {
-      value: 'lados_de_la_roca_1.jpg'
+      value: '_1general1.jpg'
     },
     {
-      value: 'lados_de_la_roca_2.jpg'
+      value: '_1general2.jpg'
     },
     {
-      value: 'lados_de_la_roca_3.jpg'
+      value: '_cara_1superior.jpg'
     },
     {
-      value: 'lados_de_la_roca_4.jpg'
+      value: '_cara_2norte.jpg'
     },
     {
-      value: 'lados_de_la_roca_5.jpg'
+      value: '_cara_3oriente.jpg'
     },
     {
-      value: 'lados_de_la_roca_6.jpg'
+      value: '_cara_4occidente.jpg'
     },
     {
-      value: 'lados_de_la_roca_7.jpg'
+      value: '_cara_5sur.jpg'
     },
     {
-      value: 'lados_de_la_roca_8.jpg'
+      value: '1_superior1.jpg'
     },
     {
-      value: 'lados_de_la_roca_9.jpg'
+      value: '1_superior2.jpg'
     },
     {
-      value: 'detalles.jpg'
+      value: '1_superior3.jpg'
     },
     {
-      value: 'detalles_1.jpg'
+      value: '2_oriente1.jpg'
     },
     {
-      value: 'detalles_2.jpg'
+      value: '2_oriente2.jpg'
     },
     {
-      value: 'detalles_3.jpg'
+      value: '2_oriente3.jpg'
     },
     {
-      value: 'detalles_4.jpg'
+      value: '2_oriente4.jpg'
     },
     {
-      value: 'detalles_5.jpg'
+      value: '3_norte1.jpg'
     },
     {
-      value: 'detalles_6.jpg'
+      value: '3_norte2.jpg'
     },
     {
-      value: 'detalles_7.jpg'
+      value: '3_norte3.jpg'
     },
     {
-      value: 'detalles_8.jpg'
+      value: '3_norte4.jpg'
     },
     {
-      value: 'detalles_9.jpg'
+      value: '4_occidente1.jpg'
     },
     {
-      value: 'detalles_10.jpg'
+      value: '5_norte_1.jpg'
     },
     {
-      value: 'IMG_3403.jpg'
+      value: '5_norte_2.jpg'
     },
     {
-      value: 'IMG_3390.jpg'
+      value: '5_norte_3.jpg'
+    },
+    {
+      value: '6_detalle1.jpg'
+    },
+    {
+      value: '6_detalle2.jpg'
+    },
+    {
+      value: '6_detalle3.jpg'
+    },
+    {
+      value: '6_detalle4.jpg'
+    },
+    {
+      value: '6_detalle5.jpg'
+    },
+    {
+      value: '6_detalle6.jpg'
+    },
+    {
+      value: '6_detalle7.jpg'
     }
   ]
 }

@@ -19,6 +19,11 @@ export const polvoGallery = {
             value: '1_polvo_12_sept_2019_1.jpg'
         },
         {
+            type: 'iframe',
+            thumb: 'video1.jpg',
+            value: 'https://www.youtube.com/embed/QiooLjPVAcI'
+        },
+        {
             value: '1_polvo_12_sept_2019_2.jpg'
         },
         {
@@ -31,6 +36,11 @@ export const polvoGallery = {
             value: '1_polvo_12_sept_2019_5.jpg'
         },
         {
+            type: 'iframe',
+            thumb: 'video2.jpg',
+            value: 'https://www.youtube.com/embed/qTz5QSiWaTg'
+        },
+        {
             value: '1_polvo_12_sept_2019_6.jpg'
         },
         {
@@ -41,6 +51,11 @@ export const polvoGallery = {
         },
         {
             value: '1_polvo_5_nov_2020.jpg'
+        },
+        {
+            type: 'iframe',
+            thumb: 'video3.jpg',
+            value: 'https://www.youtube.com/embed/AU-TuuBsSuw'
         },
         {
             value: '1_polvo_desacumulado1.jpg'
