@@ -3,74 +3,110 @@
  */
 
 export const polvoGallery = {
-  intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
-  rootPath: './assets/img/polvo/',
-  list: [
-    {
-      value: 'lados_de_la_roca_1.jpg'
-    },
-    {
-      value: 'lados_de_la_roca_2.jpg'
-    },
-    {
-      value: 'lados_de_la_roca_3.jpg'
-    },
-    {
-      value: 'lados_de_la_roca_4.jpg'
-    },
-    {
-      value: 'lados_de_la_roca_5.jpg'
-    },
-    {
-      value: 'lados_de_la_roca_6.jpg'
-    },
-    {
-      value: 'lados_de_la_roca_7.jpg'
-    },
-    {
-      value: 'lados_de_la_roca_8.jpg'
-    },
-    {
-      value: 'lados_de_la_roca_9.jpg'
-    },
-    {
-      value: 'detalles.jpg'
-    },
-    {
-      value: 'detalles_1.jpg'
-    },
-    {
-      value: 'detalles_2.jpg'
-    },
-    {
-      value: 'detalles_3.jpg'
-    },
-    {
-      value: 'detalles_4.jpg'
-    },
-    {
-      value: 'detalles_5.jpg'
-    },
-    {
-      value: 'detalles_6.jpg'
-    },
-    {
-      value: 'detalles_7.jpg'
-    },
-    {
-      value: 'detalles_8.jpg'
-    },
-    {
-      value: 'detalles_9.jpg'
-    },
-    {
-      value: 'detalles_10.jpg'
-    },
-    {
-      value: 'IMG_3403.jpg'
-    },
-    {
-      value: 'IMG_3390.jpg'
-    }
-  ]
+    intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
+    rootPath: './assets/img/polvo/',
+    list: [
+        {
+            value: '1_generales_1.jpg'
+        },
+        {
+            value: '1_generales_2.jpg'
+        },
+        {
+            value: '1_generales3.jpg'
+        },
+        {
+            value: '1_polvo_12_sept_2019_1.jpg'
+        },
+        {
+            value: '1_polvo_12_sept_2019_2.jpg'
+        },
+        {
+            value: '1_polvo_12_sept_2019_3.jpg'
+        },
+        {
+            value: '1_polvo_12_sept_2019_4.jpg'
+        },
+        {
+            value: '1_polvo_12_sept_2019_5.jpg'
+        },
+        {
+            value: '1_polvo_12_sept_2019_6.jpg'
+        },
+        {
+            value: '1_polvo_3_julio_2020_20.jpg'
+        },
+        {
+            value: '1_polvo_3_NovJulio.jpg'
+        },
+        {
+            value: '1_polvo_5_nov_2020.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado1.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado10.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado11.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado12.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado2.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado3.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado6.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado7.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado8.jpg'
+        },
+        {
+            value: '1_polvo_desacumulado9.jpg'
+        },
+        {
+            value: '2_detalles_lona_con_polvo1.jpg'
+        },
+        {
+            value: '2_detalles_lona_con_polvo10.jpg'
+        },
+        {
+            value: '2_detalles_lona_con_polvo4.jpg'
+        },
+        {
+            value: '2_detalles_lona_con_polvo7.jpg'
+        },
+        {
+            value: 'Detalle_polvo_julio.jpg'
+        },
+        {
+            value: 'registrospolvo1.jpg'
+        },
+        {
+            value: 'registrospolvo2.jpg'
+        },
+        {
+            value: 'registrospolvo3.jpg'
+        },
+        {
+            value: 'registrospolvo4.jpg'
+        },
+        {
+            value: 'registrospolvo5.jpg'
+        },
+        {
+            value: 'registrospolvo6.jpg'
+        },
+        {
+            value: 'registrospolvo7.jpg'
+        }
+    ]
 }
