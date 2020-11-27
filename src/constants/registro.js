@@ -31,16 +31,16 @@ export const registroGallery = {
       value: '9transp.png'
     },
     {
-      value: '5transp.png'
-    },
-    {
-      value: '6transp.png'
-    },
-    {
       value: '7transp.png'
     },
     {
       value: '8transp.png'
+    },
+    {
+      value: '5transp.png'
+    },
+    {
+      value: '6transp.png'
     }
   ]
 }
