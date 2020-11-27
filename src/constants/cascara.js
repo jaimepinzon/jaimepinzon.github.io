@@ -37,7 +37,7 @@ export const cascaraGallery = {
       value: 'molde18.jpg'
     },
     {
-      value: 'molde19.jpg'
+      value: 'molde17.jpg'
     },
     {
       type: 'iframe',
@@ -67,10 +67,7 @@ export const cascaraGallery = {
       value: 'molde9.jpg' 
     },
     {
-      value: 'molde17.jpg' 
-    },
-    {
-      value: 'molde20.jpg'
+      value: 'molde19.jpg' 
     },
     {
       value: 'molde21.jpg'
