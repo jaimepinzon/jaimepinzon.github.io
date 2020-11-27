@@ -3,7 +3,7 @@
  */
 
 export const mundosGallery = {
-  intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
+  intro: 'En la dinastía Song (1100 aprox.) en el antiguo Imperio Chino, vivían personas llamadas los Inmortales. Al contemplar por largos ratos pequeñas rocas, llegaban a ver lugares naturales (montañas, cuevas, pasajes, mares) en miniatura, eran capaces de volverse diminutos y habitar estos microuniversos. Me interesa extraer los mapas topográficos de estos mundos en la roca sedimentaria, los mundos se observan por sus dos caras, el abajo y el arriba',
   rootPath: './assets/img/mundos/',
   list: [
     {
