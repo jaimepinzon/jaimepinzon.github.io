@@ -7,28 +7,28 @@ export const desarmarGallery = {
   rootPath: './assets/img/desarmar/',
   list: [
     {
-      value: '_1general1.jpg'
+      value: '1general1.jpg'
     },
     {
-      value: '_1general2.jpg'
+      value: '1general2.jpg'
     },
     {
-      value: '_1general2.1.jpg'
+      value: '1general2.1.jpg'
     },
     {
-      value: '_cara_5sur.jpg'
+      value: 'cara_5sur.jpg'
     },
     {
-      value: '_cara_1superior.jpg'
+      value: 'cara_1superior.jpg'
     },
     {
-      value: '_cara_2norte.jpg'
+      value: 'cara_2norte.jpg'
     },
     {
-      value: '_cara_3oriente.jpg'
+      value: 'cara_3oriente.jpg'
     },
     {
-      value: '_cara_4occidente.jpg'
+      value: 'cara_4occidente.jpg'
     },
     {
       value: '1_superior1.jpg'
