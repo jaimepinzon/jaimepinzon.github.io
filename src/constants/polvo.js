@@ -3,7 +3,7 @@
  */
 
 export const polvoGallery = {
-  intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
+  intro: 'Polvo ambiental, polvo gravitacional y polvo de des-acumulación. Cada uno toma su tiempo para generarse, unos toman horas, unos toman semanas, otros meses.',
   rootPath: './assets/img/polvo/',
   list: [
     {
@@ -23,9 +23,9 @@ export const polvoGallery = {
     },
     {
       type: 'iframe',
-      thumb: 'video1.jpg',
-      value: 'https://www.youtube.com/embed/QiooLjPVAcI',
-      caption: 'Serializacion del polvo'
+      thumb: 'video3.jpg',
+      value: 'https://www.youtube.com/embed/AU-TuuBsSuw',
+      caption: 'Polvo ambiental 14 Noviembre del 2019'
     },
     {
       value: '1_polvo_12_sept_2019_3.jpg'
@@ -39,7 +39,8 @@ export const polvoGallery = {
     {
       type: 'iframe',
       thumb: 'video2.jpg',
-      value: 'https://www.youtube.com/embed/qTz5QSiWaTg'
+      value: 'https://www.youtube.com/embed/qTz5QSiWaTg',
+       caption: 'Polvo ambiental 2 de julio del 2020'
     },
     {
       value: '1_polvo_12_sept_2019_6.jpg'
@@ -55,8 +56,9 @@ export const polvoGallery = {
     },
     {
       type: 'iframe',
-      thumb: 'video3.jpg',
-      value: 'https://www.youtube.com/embed/AU-TuuBsSuw'
+      thumb: 'video1.jpg',
+      value: 'https://www.youtube.com/embed/QiooLjPVAcI',
+      caption: 'Serializacion del polvo'
     },
     {
       value: '1_polvo_desacumulado1.jpg'
