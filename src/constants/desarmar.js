@@ -13,6 +13,12 @@ export const desarmarGallery = {
       value: '_1general2.jpg'
     },
     {
+      value: '_1general2.1.jpg'
+    },
+    {
+      value: '_cara_5sur.jpg'
+    },
+    {
       value: '_cara_1superior.jpg'
     },
     {
@@ -25,9 +31,6 @@ export const desarmarGallery = {
       value: '_cara_4occidente.jpg'
     },
     {
-      value: '_cara_5sur.jpg'
-    },
-    {
       value: '1_superior1.jpg'
     },
     {
@@ -37,16 +40,7 @@ export const desarmarGallery = {
       value: '1_superior3.jpg'
     },
     {
-      value: '2_oriente1.jpg'
-    },
-    {
-      value: '2_oriente2.jpg'
-    },
-    {
-      value: '2_oriente3.jpg'
-    },
-    {
-      value: '2_oriente4.jpg'
+      value: '6_detalle5.jpg'
     },
     {
       value: '3_norte1.jpg'
@@ -55,10 +49,25 @@ export const desarmarGallery = {
       value: '3_norte2.jpg'
     },
     {
-      value: '3_norte3.jpg'
+      value: '3_norte4.jpg'
     },
     {
-      value: '3_norte4.jpg'
+      value: '6_detalle3.jpg'
+    },
+    {
+      value: '6_detalle2.jpg'
+    },
+    {
+      value: '2_oriente1.jpg'
+    },
+    {
+      value: '2_oriente2.jpg'
+    },
+    {
+      value: '2_oriente4.jpg'
+    },
+    {
+      value: '6_detalle8.jpg'
     },
     {
       value: '4_occidente1.jpg'
@@ -73,22 +82,10 @@ export const desarmarGallery = {
       value: '5_norte_3.jpg'
     },
     {
-      value: '6_detalle1.jpg'
-    },
-    {
-      value: '6_detalle2.jpg'
-    },
-    {
-      value: '6_detalle3.jpg'
-    },
-    {
-      value: '6_detalle4.jpg'
-    },
-    {
-      value: '6_detalle5.jpg'
-    },
-    {
       value: '6_detalle6.jpg'
+    },
+    {
+      value: '6_detalle1.jpg'
     },
     {
       value: '6_detalle7.jpg'
