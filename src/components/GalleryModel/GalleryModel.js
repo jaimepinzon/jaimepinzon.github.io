@@ -44,10 +44,29 @@ const styles = () => ({
       fontSize: 60
     }
   },
+  videoCaption: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    padding: 8,
+    width: '100%',
+    textAlign: 'left'
+  },
   hide: {
     display: 'none'
   }
 })
+
+function IsVideo (item) {
+  return item && (item.type === 'video' || item.type === 'iframe')
+}
+
+function IsEdgeOfVideo (count, index, itemList) {
+  const edgeSideLookup = ((count % 3 === 0) && 'left') || (((count - 1) % 3 === 0) && 'right')
+  if (!edgeSideLookup) return  false
+  const indexToLook = edgeSideLookup === 'left' ? index - 1 : index + 1
+  return IsVideo(itemList[indexToLook])
+}
 
 const GalleryModel = (props) => {
   const { classes, model = {} } = props
@@ -61,8 +80,7 @@ const GalleryModel = (props) => {
   const callModal = useCallback((open, src, isVideo) => {
     setModalInfo({ open, src, isVideo })
   }, [])
-  let count = useMemo(() => 0, [model])
-  let videoRendered = useMemo(() => false, [model])
+  let count = useMemo(() => 1, [model])
 
   useEffect(() => {
     setTimeout(() => { setLoad(false) }, 1500)
@@ -75,13 +93,15 @@ const GalleryModel = (props) => {
       </Typography>
       <Loading className={`${!load && classes.hide}`} />
       <GridList cellHeight={150} className={`${load ? classes.hide : classes.gridList}`} cols={3}>
-        {list.map((item, i) => {
-          const isByFour = ((count + 1) % 4) === 0
-          const isVideo = item.type === 'video' || item.type === 'iframe'
-          const col = isVideo ? 2 : isByFour ? 2 : 1
-          const row = isVideo ? 2 : (videoRendered && ((count + 1) % 3 === 0)) ? 2 : 1
+        {list.map((item, i, actualList) => {
+          const modulusMatrix = (count % 2) === 0 ? 4 : 11
+          const matrixValue = ((count - modulusMatrix) / 12)
+          const isDoubleColumn = matrixValue >= 0 && Number.isInteger(matrixValue)
+          const isVideo = IsVideo(item)
+          const isEdgeOfVideo = IsEdgeOfVideo(count, i, actualList)
+          const col = (isVideo || isDoubleColumn) ? 2 : 1
+          const row = (isVideo || isEdgeOfVideo) ? 2 : 1
           const thumb = isVideo ? item.thumb : item.value
-          videoRendered = isVideo
           count += col
 
           return (
@@ -90,6 +110,7 @@ const GalleryModel = (props) => {
               {isVideo &&
                   <Grid container alignItems={'center'} justify={'center'} classes={{root: classes.videoOverlay}}>
                     <PlayCircleFilledOutlinedIcon/>
+                    {item.caption && <Typography  classes={{root: classes.videoCaption}}>{item.caption}</Typography>}
                   </Grid>}
               <ButtonBase classes={{root: classes.link}} onClick={() => callModal(true, item.value, isVideo)}/>
             </GridListTile>

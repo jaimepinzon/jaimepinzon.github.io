@@ -9,6 +9,9 @@ const styles = () => ({
     padding: [[10, 30]],
     maxWidth: 800,
     margin: [[0, 'auto']]
+  },
+  imgContainer: {
+    background: 'none'
   }
 })
 
@@ -18,7 +21,9 @@ const Registro = (props) => {
   return (
     <SectionStructure {...props}>
       <Grid container classes={{root: classes.contentContainer}}>
-        <GalleryModel model={registroGallery}/>
+        <GalleryModel classes={{
+          imgContainer: classes.imgContainer
+        }} model={registroGallery}/>
       </Grid>
     </SectionStructure>
   )

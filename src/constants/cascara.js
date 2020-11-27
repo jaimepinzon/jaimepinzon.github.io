@@ -19,12 +19,12 @@ export const cascaraGallery = {
       value: 'molde5.jpg'
     },
     {
+      value: 'molde6.jpg'
+    },
+    {
       type: 'iframe',
       thumb: 'video1.jpg',
       value: 'https://www.youtube.com/embed/-69_DdooCto'
-    },
-    {
-      value: 'molde6.jpg'
     },
     {
       value: 'molde7.jpg'
