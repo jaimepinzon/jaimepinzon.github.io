@@ -61,7 +61,8 @@ export const desacumulacionGallery = {
     {
       type: 'iframe',
       thumb: 'video3.jpg',
-      value: 'https://www.youtube.com/embed/dA-K3-1EMHg'
+      value: 'https://www.youtube.com/embed/dA-K3-1EMHg',
+      caption: 'Des-acumulación #42'
     },
     {
       value: 'desac4.jpg'
