@@ -3,7 +3,7 @@
  */
 
 export const desacumulacionGallery = {
-  intro: 'Registros de distintos momentos de mimesis, acción de des-acumular, recoger, esperar.',
+  intro: 'Son tres cuerpos los que entran en juego: Estoy yo, como sujeto que efectúa una acción. Esta la roca ígnea, como medio para des-acumular capas. Está la roca sedimentaria, como cuerpo cambiante supeditado a transformarse en tiempos ajenos a ella. Registros de distintos momentos de mimesis, acción de des-acumular, recoger, esperar.',
   rootPath: './assets/img/desacumulacion/',
   list: [
     {
