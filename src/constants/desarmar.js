@@ -3,7 +3,7 @@
  */
 
 export const desarmarGallery = {
-  intro: 'Detalles de cada una de las piezas en frottage',
+  intro: 'Como si fuera un cubo emprendo una desarticulación de la roca mediante el dibujo, esta vez entendido como la impronta directa de su textura. Entender cada línea y brote como las venas mismas de la roca. Cada una de las piezas tomó un tiempo distinto en completarse, siendo las primeras dos de días (superior y oriente), la tercera (norte) de 6 horas, la cuarta (occidente) de 2 horas y la quinta (sur) de 20 minutos. La sexta cara permanece secreta ante mi',
   rootPath: './assets/img/desarmar/',
   list: [
     {
@@ -31,6 +31,12 @@ export const desarmarGallery = {
       value: '_cara_4occidente.jpg'
     },
     {
+      value: '6_detalle7.jpg'
+    },
+    {
+      value: '6_detalle1.jpg'
+    },
+    {
       value: '1_superior1.jpg'
     },
     {
@@ -41,6 +47,9 @@ export const desarmarGallery = {
     },
     {
       value: '6_detalle5.jpg'
+    },
+    {
+      value: '6_detalle6.jpg'
     },
     {
       value: '3_norte1.jpg'
@@ -83,9 +92,6 @@ export const desarmarGallery = {
     },
     {
       value: '6_detalle6.jpg'
-    },
-    {
-      value: '6_detalle1.jpg'
     },
     {
       value: '6_detalle7.jpg'
