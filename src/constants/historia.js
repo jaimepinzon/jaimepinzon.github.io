@@ -36,12 +36,12 @@ export const historiaGallery = {
       value: 'historia1.jpg'
     },
     {
+      value: 'vista5.jpg'
+    },
+    {
       type: 'iframe',
       thumb: 'video2.jpg',
       value: 'https://www.youtube.com/embed/y4w4x4dbbws'
-    },
-    {
-      value: 'vista5.jpg'
     },
     {
       value: 'vista6.jpg'
