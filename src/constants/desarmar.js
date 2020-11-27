@@ -3,7 +3,7 @@
  */
 
 export const desarmarGallery = {
-  intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
+  intro: 'Detalles de cada una de las piezas en frottage',
   rootPath: './assets/img/desarmar/',
   list: [
     {
