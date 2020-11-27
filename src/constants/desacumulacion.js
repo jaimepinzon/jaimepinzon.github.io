@@ -1,9 +1,9 @@
-/**
+t/**
  * Section Desacumulacion Content
  */
 
 export const desacumulacionGallery = {
-  intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
+  intro: 'Registros de distintos momentos de mimesis, acción de des-acumular, recoger, esperar.',
   rootPath: './assets/img/desacumulacion/',
   list: [
     {
