@@ -3,12 +3,9 @@
  */
 
 export const registroGallery = {
-  intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
+  intro: 'Litografías, grafito, lapices de colores, pigmentos minerales, frottage, intaglio en papel.',
   rootPath: './assets/img/registro/',
   list: [
-    {
-      value: '0transp.png'
-    },
     {
       value: '1transp.png'
     },
@@ -16,10 +13,22 @@ export const registroGallery = {
       value: '2transp.png'
     },
     {
+      value: '11transp.png'
+    },
+    {
+      value: '0transp.png'
+    },
+    {
+      value: '10transp.png'
+    },
+    {
       value: '3transp.png'
     },
     {
       value: '4transp.png'
+    },
+    {
+      value: '9transp.png'
     },
     {
       value: '5transp.png'
@@ -29,6 +38,9 @@ export const registroGallery = {
     },
     {
       value: '7transp.png'
+    },
+    {
+      value: '8transp.png'
     }
   ]
 }
