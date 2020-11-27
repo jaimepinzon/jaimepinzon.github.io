@@ -25,7 +25,7 @@ export const historiaGallery = {
       type: 'iframe',
       thumb: 'video1.jpg',
       value: 'https://www.youtube.com/embed/OQQhOgZ3pxg',
-      caption: 'un hito posándose' 
+      caption: 'un hito desplazado' 
     },
     {
       value: 'vista2.jpg'
@@ -42,7 +42,8 @@ export const historiaGallery = {
     {
       type: 'iframe',
       thumb: 'video2.jpg',
-      value: 'https://www.youtube.com/embed/y4w4x4dbbws'
+      value: 'https://www.youtube.com/embed/y4w4x4dbbws',
+      caption: 'un hito posándose'
     },
     {
       value: 'vista6.jpg'
