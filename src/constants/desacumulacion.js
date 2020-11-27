@@ -68,15 +68,18 @@ export const desacumulacionGallery = {
       value: 'desac4.jpg'
     },  
     {
-      value: 'desacumular1.jpg'
+      value: 'desac2.jpg'
     },
     {
-      value: 'desac2.jpg'
+      value: 'desacumular1.jpg'
     },
     {
       type: 'iframe',
       thumb: 'desacum43video.jpg',
       value: 'https://www.youtube.com/embed/1yFy7yGw_bw'
+    },
+    {
+      value: 'desacumular3.jpg'
     },
     {
       type: 'iframe',
@@ -85,7 +88,7 @@ export const desacumulacionGallery = {
       caption: 'Des-acumulación #44'
     },
     {
-      value: 'desacumular3.jpg'
+      value: 'desac5.jpg'
     }
   ]
 }
