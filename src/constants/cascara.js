@@ -3,7 +3,7 @@
  */
 
 export const cascaraGallery = {
-  intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
+  intro: 'Las primeras fotos son el interior de la cáscara, tal caverna nos adentra a mundos inexplorados y arropadores de calor, como un abrazo. Despúes está la cáscara flotando en el espacio cual vestigio de la tripa de montaña que es. ',
   rootPath: './assets/img/cascara/',
   list: [
     {
@@ -19,47 +19,19 @@ export const cascaraGallery = {
       value: 'molde5.jpg'
     },
     {
-      value: 'molde6.jpg'
+      value: 'molde12.jpg'
     },
     {
       type: 'iframe',
       thumb: 'video1.jpg',
-      value: 'https://www.youtube.com/embed/-69_DdooCto'
+      value: 'https://www.youtube.com/embed/-69_DdooCto',
+      caption: 'Rocas que respiran'
     },
     {
-      value: 'molde7.jpg'
-    },
-    {
-      value: 'molde8.jpg'
-    },
-    {
-      value: 'molde9.jpg'
-    },
-    {
-      value: 'molde10.jpg'
-    },
-    {
-      type: 'iframe',
-      thumb: 'video2.jpg',
-      value: 'https://www.youtube.com/embed/KlFUxyeDOIE'
-    },
-    {
-      value: 'molde11.jpg'
-    },
-    {
-      value: 'molde12.jpg'
-    },
-    {
-      value: 'molde13.jpg'
-    },
-    {
-      value: 'molde14.jpg'
+      value: 'molde22.jpg' 
     },
     {
       value: 'molde16.jpg'
-    },
-    {
-      value: 'molde17.jpg'
     },
     {
       value: 'molde18.jpg'
@@ -68,13 +40,40 @@ export const cascaraGallery = {
       value: 'molde19.jpg'
     },
     {
+      type: 'iframe',
+      thumb: 'video2.jpg',
+      value: 'https://www.youtube.com/embed/KlFUxyeDOIE',
+      caption: 'Cáscaras que se tambalean'
+    },
+    {
+      value: 'molde11.jpg'
+    },
+    {
+      value: 'molde20.jpg' 
+    },
+    {
+      value: 'molde13.jpg'
+    },
+    {
+      value: 'molde14.jpg'
+    },
+    {
+      value: 'molde8.jpg' 
+    },
+    {
+      value: 'molde10.jpg' 
+    },
+    {
+      value: 'molde9.jpg' 
+    },
+    {
+      value: 'molde17.jpg' 
+    },
+    {
       value: 'molde20.jpg'
     },
     {
       value: 'molde21.jpg'
-    },
-    {
-      value: 'molde22.jpg'
     },
     {
       value: 'molde23.jpg'
