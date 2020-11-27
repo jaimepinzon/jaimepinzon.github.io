@@ -78,13 +78,13 @@ export const desacumulacionGallery = {
       value: 'https://www.youtube.com/embed/1yFy7yGw_bw'
     },
     {
-      value: 'desacumular3.jpg'
-    },
-    {
       type: 'iframe',
       thumb: 'desacum44.jpg',
       value: 'https://www.youtube.com/embed/Sy3r0cLzCuU',
       caption: 'Des-acumulación #44'
+    },
+    {
+      value: 'desacumular3.jpg'
     }
   ]
 }
