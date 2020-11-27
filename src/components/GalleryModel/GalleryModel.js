@@ -76,7 +76,7 @@ const GalleryModel = (props) => {
       <Loading className={`${!load && classes.hide}`} />
       <GridList cellHeight={150} className={`${load ? classes.hide : classes.gridList}`} cols={3}>
         {list.map((item, i) => {
-          const isByFour = ((i + 1) % 4) === 0
+          const isByFour = ((count + 1) % 4) === 0
           const isVideo = item.type === 'video' || item.type === 'iframe'
           const col = isVideo ? 2 : isByFour ? 2 : 1
           const row = isVideo ? 2 : (videoRendered && ((count + 1) % 3 === 0)) ? 2 : 1
