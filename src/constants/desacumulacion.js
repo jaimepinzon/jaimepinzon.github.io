@@ -16,13 +16,13 @@ export const desacumulacionGallery = {
       value: 'desac1.jpg'
     },
     {
+      value: 'desac2.jpg'
+    },
+    {
       type: 'iframe',
       thumb: 'desacum30.jpg',
       value: 'https://www.youtube.com/embed/oIz0ao8PVsQ',
       caption: 'Des-acumulación #30' 
-    },
-    {
-      value: 'desac2.jpg'
     },
     {
       type: 'iframe',
@@ -33,13 +33,13 @@ export const desacumulacionGallery = {
       value: 'desac3.jpg'
     },
     {
+      value: 'desacumular2.jpg'
+    },
+    {
       type: 'iframe',
       thumb: 'desacum33.jpg',
       value: 'https://www.youtube.com/embed/T6C1pYtomZI',
       caption: 'Des-acumulación #33'
-    },
-    {
-      value: 'desacumular2.jpg'
     },
     {
       type: 'iframe',
@@ -50,13 +50,13 @@ export const desacumulacionGallery = {
       value: 'desac5.jpg'
     },
     {
+      value: 'desac6.jpg'
+    },
+    {
       type: 'iframe',
       thumb: 'desacum35.jpg',
       value: 'https://www.youtube.com/embed/kxpxTBGys6g',
       caption: 'Des-acumulación #35'
-    },
-    {
-      value: 'desac6.jpg'
     },
     {
       type: 'iframe',
@@ -64,7 +64,13 @@ export const desacumulacionGallery = {
       value: 'https://www.youtube.com/embed/dA-K3-1EMHg'
     },
     {
+      value: 'desac4.jpg'
+    },  
+    {
       value: 'desacumular1.jpg'
+    },
+    {
+      value: 'desac2.jpg'
     },
     {
       type: 'iframe',
@@ -79,9 +85,6 @@ export const desacumulacionGallery = {
       thumb: 'desacum44.jpg',
       value: 'https://www.youtube.com/embed/Sy3r0cLzCuU',
       caption: 'Des-acumulación #44'
-    },
-    {
-      value: 'desac4.jpg'
-    }     
+    }
   ]
 }
