@@ -60,7 +60,7 @@ export const desacumulacionGallery = {
     },
     {
       type: 'iframe',
-      thumb: 'desacum42video.jpg',
+      thumb: 'video3.jpg',
       value: 'https://www.youtube.com/embed/dA-K3-1EMHg'
     },
     {
