@@ -3,7 +3,7 @@
  */
 
 export const rocaGallery = {
-  intro: 'Estas imagenes muestran el proceso de desgaste, para ampliarlas de click en cada una.',
+  intro: 'detalles de la roca por todos sus lados, fotos tomadas en septiembre y diciembre del 2019',
   rootPath: './assets/img/roca/',
   list: [
     {
@@ -19,7 +19,7 @@ export const rocaGallery = {
       value: 'lados_de_la_roca_4.jpg'
     },
     {
-      value: 'lados_de_la_roca_5.jpg'
+      value: 'detalles_6.jpg'
     },
     {
       value: 'lados_de_la_roca_6.jpg'
@@ -52,7 +52,7 @@ export const rocaGallery = {
       value: 'detalles_5.jpg'
     },
     {
-      value: 'detalles_6.jpg'
+      value: 'lados_de_la_roca_5.jpg'
     },
     {
       value: 'detalles_7.jpg'
