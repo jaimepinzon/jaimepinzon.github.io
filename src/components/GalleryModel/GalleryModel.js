@@ -99,7 +99,7 @@ const GalleryModel = (props) => {
           const isDoubleColumn = matrixValue >= 0 && Number.isInteger(matrixValue)
           const isVideo = IsVideo(item)
           const isEdgeOfVideo = IsEdgeOfVideo(count, i, actualList)
-          const col = (isVideo || isDoubleColumn) ? 2 : 1
+          const col = (isVideo || (isDoubleColumn && !isEdgeOfVideo)) ? 2 : 1
           const row = (isVideo || isEdgeOfVideo) ? 2 : 1
           const thumb = isVideo ? item.thumb : item.value
           count += col
