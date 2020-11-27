@@ -104,13 +104,13 @@ export const rocaGallery = {
     },  
     {
       type: 'iframe',
-      thumb: 'video1.jpg',
+      thumb: 'medidasvideo.jpg',
       value: 'https://www.youtube.com/embed/ZjZCe48VPgI',
       caption: 'Medidas de la roca' 
     },
     {
       type: 'iframe',
-      thumb: 'video1.jpg',
+      thumb: 'videodureza.jpg',
       value: 'https://www.youtube.com/embed/dKVnfGg_F6w',
       caption: 'Dureza' 
     }
