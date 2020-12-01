@@ -6,7 +6,8 @@ const styles = () => ({
     width: '100%',
     minHeight: '100%',
     background: '#fafde8',
-    flex: '1'
+    flex: '1',
+    paddingBottom: 50
   },
   header: {
     padding: [[50, 30, 0]],

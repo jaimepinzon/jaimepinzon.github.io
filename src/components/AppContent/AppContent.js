@@ -3,7 +3,6 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Loading from '../Loading/Loading'
 import { sections } from '../../constants/sections'
 const Landing = React.lazy(() => import('../Landing/Landing'))
-
 const Historia = React.lazy(() => import('../Sections/Historia'))
 const Roca = React.lazy(() => import('../Sections/Roca'))
 const Cascara = React.lazy(() => import('../Sections/Cascara'))
@@ -12,6 +11,7 @@ const Desacumulacion = React.lazy(() => import('../Sections/Desacumulacion'))
 const Mundos = React.lazy(() => import('../Sections/Mundos'))
 const Polvo = React.lazy(() => import('../Sections/Polvo'))
 const Registro = React.lazy(() => import('../Sections/Registro'))
+const Thesis = React.lazy(() => import('../Thesis/Thesis'))
 
 const sectionComponents = {
   '/historia': Historia,
@@ -30,6 +30,11 @@ const AppContent = () => {
       <Route exact path="/">
         <Suspense fallback={<Loading />}>
           <Landing />
+        </Suspense>
+      </Route>
+      <Route exact path="/tesis">
+        <Suspense fallback={<Loading />}>
+          <Thesis />
         </Suspense>
       </Route>
       {sections.map(s => {

@@ -1,5 +1,7 @@
-import React from 'react'
-import {Divider, Grid, Typography, withStyles} from '@material-ui/core'
+import React, { useCallback } from 'react'
+import {Divider, Grid, Typography, Button, withStyles} from '@material-ui/core'
+import { withRouter } from 'react-router-dom'
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt'
 
 const styles = (theme) => ({
   vidSection: {
@@ -54,10 +56,21 @@ const styles = (theme) => ({
   by: {
     fontSize: 11,
     marginTop: 10
+  },
+  go: {
+    display: 'flex',
+    color: '#fff',
+    margin: [[0, 'auto', 5]],
+    background: 'rgba(36, 68, 116, .4)',
+    '&:hover': {
+      background: 'rgba(36, 68, 116, .9)'
+    }
   }
 })
 
-const VideoSection = ({classes}) => {
+const VideoSection = ({classes, history}) => {
+  const goToPage = useCallback(() => history.push('/tesis'), [])
+
   return (
     <Grid className={'section'} classes={{root: classes.vidSection}} container direction={'column'}
       alignItems={'center'} justify={'center'}>
@@ -73,6 +86,13 @@ const VideoSection = ({classes}) => {
         Un proyecto que explora las distintas relaciones que se pueden tener con una roca a partir de la noción de mimesis del proceso sedimentario.
       </Typography>
       <Divider classes={{ root: classes.divider }} />
+      <Button
+        variant={'contained'}
+        classes={{root: classes.go}}
+        endIcon={<ArrowRightAltIcon />}
+        onClick={goToPage}>
+        Ver Texto de Tesis
+      </Button>
       <Typography className={classes.by} classes={{ root: classes.text }}>
         Por: Jaime Santiago Pinzon
       </Typography>
@@ -80,4 +100,4 @@ const VideoSection = ({classes}) => {
   )
 }
 
-export default withStyles(styles)(VideoSection)
+export default withStyles(styles)(withRouter(VideoSection))
